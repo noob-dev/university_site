@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Faculties{% endblock %}
+
+{% block content %}
+<h2>Faculties</h2>
+<ul>
+    {% for faculty in faculties %}
+    <li>{{ faculty.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
